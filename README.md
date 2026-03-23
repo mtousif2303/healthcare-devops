@@ -1,6 +1,7 @@
 # 🏥 healthcare-devops
 
-A real-time healthcare data pipeline built and deployed using a full DevOps stack: Python + Streamlit, Docker, GitHub Actions CI/CD, and Kubernetes (Minikube).
+A real-time healthcare App
+built and deployed using a full DevOps stack: Python + Streamlit, Docker, GitHub Actions CI/CD, and Kubernetes (Minikube).
 
 ---
 
