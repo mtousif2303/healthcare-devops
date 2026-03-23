@@ -25,4 +25,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: hkseal/health-app-streamlit:latest
+        tags: mtousif2303/healthapp:latest
