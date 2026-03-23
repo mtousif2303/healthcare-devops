@@ -18,6 +18,11 @@ healthcare-devops/
 └── README.md                     # Project documentation
 ```
 
+
+
+<img width="1112" height="1186" alt="image" src="https://github.com/user-attachments/assets/ca5229cc-a7a9-4172-b0c1-2bd0a16523b0" />
+
+
 ---
 
 ## 🧰 Tech Stack
