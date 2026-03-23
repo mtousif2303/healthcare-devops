@@ -7,17 +7,27 @@ built and deployed using a full DevOps stack: Python + Streamlit, Docker, GitHub
 
 ## 📁 Project Structure
 
-```
-healthcare-devops/
-├── app.py                        # Streamlit dashboard (main app)
-├── Dockerfile                    # Docker image definition
-├── deployment.yaml               # Kubernetes Deployment manifest
-├── service.yaml                  # Kubernetes Service manifest
-├── .github/
-│   └── workflows/
-│       └── automation.yaml       # GitHub Actions CI/CD pipeline
-└── README.md                     # Project documentation
-```
+Developer (local)
+      │
+      │  git push origin main
+      ▼
+GitHub Actions (CI/CD)
+      │  ├── Checkout code
+      │  ├── Setup Docker Buildx
+      │  ├── Login to Docker Hub
+      │  └── Build + Push image  ──────► Docker Hub
+      │                                  mtousif2303/healthapp:latest
+      ▼
+Kubernetes (Minikube)
+      │  ├── minikube start
+      │  ├── kubectl apply -f deployment.yaml  (2 replicas)
+      │  ├── kubectl apply -f service.yaml     (LoadBalancer)
+      │  └── Pods: Running 2/2
+      │
+      │  minikube service health-app-service
+      ▼
+Live Streamlit Dashboard
+      http://127.0.0.1:50389
 
 
 
