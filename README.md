@@ -7,6 +7,7 @@ built and deployed using a full DevOps stack: Python + Streamlit, Docker, GitHub
 
 ## 📁 Project Structure
 
+```
 Developer (local)
       │
       │  git push origin main
@@ -28,6 +29,8 @@ Kubernetes (Minikube)
       ▼
 Live Streamlit Dashboard
       http://127.0.0.1:50389
+
+```
 
 
 
